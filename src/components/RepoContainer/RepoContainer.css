@@ -2,13 +2,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 2px solid grey;
-    padding: 10px;
+    border-bottom: 1px solid rgb(180, 179, 179);
+    padding: 30px;
 }
 .repo-name{
-    color: rgb(2, 2, 196);
+    color: rgb(34, 75, 225);
     font-weight: 600;
-    font-size: 1.8rem; 
+    font-size: 2rem; 
 }
 .repo-footer{
     display: flex;

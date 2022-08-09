@@ -2,6 +2,7 @@ import './App.css';
 import {RepoContainer} from './components/RepoContainer/RepoContainer';
 import {Aside} from './components/Aside/Aside'
 import {useState, useEffect} from 'react';
+import {Header} from './components/Header/Header';
 
 const userURL= 'https://api.github.com/users/sebastianabril';
 const reposURL = 'https://api.github.com/users/sebastianabril/repos';
@@ -25,27 +26,32 @@ function App() {
   console.log(userData);
   return (
     <div className="App">
+      <Header />
+      <div className="section-container">
       <Aside 
-       avatar_url = {userData.avatar_url}
-       name = {userData.name}
-       login = {userData.login}
-       bio = {userData.bio}
-       followers = {userData.followers}
-       following = {userData.following}
-       location = {userData.location}
-      />
-      <div className="Repositories">
-        {data.map((repo) =>{
-          return(
-            <RepoContainer 
-            name={repo.name}
-            fork={repo.fork}
-            forkURL={repo.forks_url}
-            description={repo.description}
-              />
-          )
-        })}
+        avatar_url = {userData.avatar_url}
+        name = {userData.name}
+        login = {userData.login}
+        bio = {userData.bio}
+        followers = {userData.followers}
+        following = {userData.following}
+        location = {userData.location}
+        />
+        <div className="Repositories">
+          {data.map((repo) =>{
+            return(
+              <RepoContainer 
+              name={repo.name}
+              fork={repo.fork}
+              forkURL={repo.forks_url}
+              description={repo.description}
+                />
+            )
+          })}
+        </div>
       </div>
+
+
 
     </div>
   );

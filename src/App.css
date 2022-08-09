@@ -1,9 +1,12 @@
 .App{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   font-size: 1.5rem;
 }
+.section-container{
+  display: flex; 
+  
+}
 .Repositories{
- 
   width: 70%;
 }
