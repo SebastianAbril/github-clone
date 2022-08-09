@@ -4,9 +4,12 @@ export const RepoContainer = ({name, fork, forkURL, description, languagesUsed, 
     return(
         <div className="RepoContainer">
             <div clasasName="RepoContainer-info">
-                <p>{name}</p>
+                <p className="repo-name">{name}</p>
                 <p>{ fork && <p>Froked from {forkURL}</p>}</p>
                 <p>{description}</p>
+                <div className="repo-footer">
+                    
+                </div>
             </div>
             <div clasasName="RepoContainer-stadistics">
                 <p>Estas son las estadisticas</p>

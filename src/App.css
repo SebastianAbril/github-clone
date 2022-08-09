@@ -1,4 +1,9 @@
+.App{
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+}
 .Repositories{
-  border: 1px solid black;
+ 
   width: 70%;
 }
